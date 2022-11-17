@@ -1,0 +1,34 @@
+@font-face {
+  font-family: UbuntuTitling;
+  src: url("./Ubuntu-Medium.ttf") format("truetype");
+}
+
+.log-img {
+  width: 5.5vw;
+  height: 5.5vw;
+}
+
+.navbar-toggler {
+  right: 10%;
+  position: relative;
+}
+
+.navbar {
+  background: #fcf2db !important;
+}
+
+.nav-link {
+  float: right;
+  font-family: UbuntuTitling;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 15px;
+  color: #352b15;
+  margin-left: 4.5vw;
+}
+
+.me-auto {
+  /* margin-left: 182px; */
+  text-align: center;
+}

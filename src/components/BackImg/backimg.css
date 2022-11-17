@@ -1,0 +1,33 @@
+.frame1 {
+  position: absolute;
+  width: 35vw;
+  height: 55vh;
+  left: 8%;
+  top: 27%;
+}
+
+.frame2 {
+  position: absolute;
+  width: 35vw;
+  height: 55vh;
+  left: 55%;
+  top: 20%;
+  z-index: 1;
+}
+
+.frame3 {
+  position: absolute;
+  width: 35vw;
+  height: 40vh;
+  left: 55%;
+  top: 55%;
+}
+
+.frame4 {
+  position: absolute;
+  bottom: 0px;
+  height: 30vh;
+  width: 99%;
+
+  float: bottom;
+}
