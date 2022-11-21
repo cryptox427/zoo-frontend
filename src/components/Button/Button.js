@@ -1,19 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
 import { Nav } from "react-bootstrap";
 import "./button.css";
 
 const CButton = (props) => {
   return (
-    <Nav.Link
-      className="custom-button"
-      style={{
-        width: props.width,
-        height: props.height,
-        fontSize: props.fontSize,
-      }}
-    >
-      {props.value}
-    </Nav.Link>
+    <>
+      <Nav.Link
+        className="custom-button"
+        style={{
+          width: props.width,
+          height: props.height,
+          fontSize: props.fontSize,
+          marginBottom: props.pb * 10 + "px",
+          marginRight: props.mr,
+        }}
+        onClick={props.value}
+        key={props.key}
+        disabled={props.disabled}
+      >
+        {props.value}
+      </Nav.Link>
+    </>
   );
 };
 

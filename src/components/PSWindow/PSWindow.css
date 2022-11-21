@@ -16,10 +16,10 @@
   border-radius: 20px;
   background: #fff9eb;
   padding-top: 21px;
-  top: 35%;
+  top: 19%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 1000;
+  z-index: 1;
 }
 
 .main-panel-incoming {
@@ -30,9 +30,79 @@
   border-radius: 20px;
   background: #fff9eb;
   padding-top: 21px;
-  top: 32%;
+  top: 16.5%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.refferal-panel {
+  vertical-align: middle;
+  position: relative;
+  display: inline-flex;
+  margin-top: -55px;
+  width: 441px;
+  height: 51px;
+  border-radius: 20px;
+  background: #fff9eb;
+  padding-top: 21px;
+  top: 16%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.title-section {
+  position: relative;
+  top: -10px;
+  left: 15px;
+  margin-right: 10px;
+  display: inline-block;
+  width: 104px;
+  height: 29px;
+  text-align: center;
+  background: #fbe6b580;
+  border-radius: 6px;
+}
+
+.clipboard-edit {
+  position: relative;
+  top: -15px;
+  display: inline-block;
+  width: 278px;
+}
+
+.css-en3na7 {
+  color: #fbe6b5;
+}
+
+.css-o03mr5 input {
+  border: 1px solid #fbe6b5;
+  border-radius: 6px !important;
+  font-family: UbuntuTitling;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 11px;
+  line-height: 11px;
+  /* identical to box height */
+
+  color: #352b1591;
+}
+
+.clipboard-edit input {
+}
+
+.refferal-compnent-container {
+}
+
+.refferal-title {
+  padding-top: 5px;
+  font-family: Chaloops;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 11px;
+  line-height: 11px;
+  /* identical to box height */
+
+  color: #352b15;
 }
 
 .ps-title {
@@ -131,6 +201,15 @@
   width: 387px;
   height: 38px;
   border: 1px solid #fbe6b5;
+  padding-left: 20px;
+  font-family: UbuntuTitling;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 13px;
+  /* identical to box height */
+
+  color: #352b15;
   border-radius: 11px;
 }
 
@@ -180,4 +259,10 @@
   /* identical to box height */
 
   color: #ffeab8;
+}
+
+@media only screen and (max-width: 768px) {
+  .ps-title {
+    margin-left: 30px;
+  }
 }

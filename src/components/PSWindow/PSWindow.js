@@ -4,7 +4,7 @@ import "./PSWindow.css";
 import CountdownTimer from "react-component-countdown-timer";
 import ProgressBar from "react-bootstrap/ProgressBar";
 import CButton from "../Button";
-import BackImg from "../BackImg/BackImg";
+import { CopyButton, Flex, TextInput } from "@contentful/f36-components";
 
 const Title = (props) => {
   return (
@@ -25,7 +25,7 @@ const Title = (props) => {
 const BNBEdit = (props) => {
   return (
     <Container className="widget-container">
-      <input type="edit" className="bnb-input" />
+      <input type="edit" className="bnb-input" value="0.00" />
       <CButton value="MAX" width="46px" height="23px" fontSize="11px" />
     </Container>
   );
@@ -52,15 +52,15 @@ const Widgets = (props) => {
       <Row className="justify-content-md-center pt-3">
         <Col className="">
           <ProgressBar now={progressNow} />
-          <p className="min-value">0 BNB</p>
-          <p className="max-value">40 BNB</p>
+          <p className="min-value">0 USDT</p>
+          <p className="max-value">40 USDT</p>
         </Col>
       </Row>
       <Row className="justify-content-md-center">
         <Col className="widgets">
           <BNBEdit />
           <div className="buy">
-            <CButton value="Buy with BNB" width="387px" height="31px" />
+            <CButton value="Buy with USDT" width="387px" height="31px" />
           </div>
         </Col>
       </Row>
@@ -68,10 +68,38 @@ const Widgets = (props) => {
   );
 };
 
+const ClipboardEdit = (props) => {
+  return (
+    <Flex flexDirection="column">
+      <TextInput.Group>
+        <TextInput isDisabled isReadOnly defaultValue={props.val} />
+        <CopyButton
+          value={props.value}
+          tooltipProps={{ placement: "right", usePortal: true }}
+        />
+      </TextInput.Group>
+    </Flex>
+  );
+};
+
+const RefferalLink = (props) => {
+  return (
+    <div className="refferal-compnent-container container">
+      <div className="row">
+        <div className="title-section">
+          <p className="refferal-title">Refferal Link</p>
+        </div>
+        <div className="clipboard-edit">
+          <ClipboardEdit value="https://refferallink.com" />
+        </div>
+      </div>
+    </div>
+  );
+};
+
 const PSWindow = (props) => {
   return (
     <>
-      <BackImg />
       <div className="main-panel">
         <Title />
         <Widgets className="widget-container" />
@@ -81,12 +109,17 @@ const PSWindow = (props) => {
           <IncomingEdit />
           <span>
             <p className="min-max-buy">Minimum Buy</p>
-            <p className="price">0.01 BNB</p>
+            <p className="price">30 $ZOO</p>
           </span>
           <span>
             <p className="min-max-buy">Maximum Buy</p>
-            <p className="price">1 BNB</p>
+            <p className="price">120 $ZOO</p>
           </span>
+        </Container>
+      </div>
+      <div className="refferal-panel">
+        <Container>
+          <RefferalLink />
         </Container>
       </div>
     </>

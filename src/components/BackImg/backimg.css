@@ -1,7 +1,7 @@
 .frame1 {
   position: absolute;
   width: 35vw;
-  height: 55vh;
+  height: 50vh;
   left: 8%;
   top: 27%;
 }
@@ -9,7 +9,7 @@
 .frame2 {
   position: absolute;
   width: 35vw;
-  height: 55vh;
+  height: 50vh;
   left: 55%;
   top: 20%;
   z-index: 1;
@@ -17,7 +17,7 @@
 
 .frame3 {
   position: absolute;
-  width: 35vw;
+  width: 30vw;
   height: 40vh;
   left: 55%;
   top: 55%;
@@ -25,9 +25,65 @@
 
 .frame4 {
   position: absolute;
-  bottom: 0px;
-  height: 30vh;
-  width: 99%;
+  bottom: -199px;
+  height: 23vw;
+  width: 100vw;
+  z-index: -1;
+}
 
-  float: bottom;
+.frame5 {
+  display: none;
+  position: absolute;
+  top: 28%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.frame6 {
+  display: none;
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.frame7 {
+  display: none;
+  position: absolute;
+  top: 0px;
+  height: 23vw;
+  width: 100%;
+  z-index: -1;
+  transform: rotate(180deg);
+}
+
+@media only screen and (max-width: 925px) {
+  .frame1 {
+    display: none;
+  }
+  .frame2 {
+    display: none;
+  }
+  .frame3 {
+    display: none;
+  }
+  .frame4 {
+    bottom: -672px;
+  }
+  .frame5 {
+    display: block;
+    width: 400px;
+    height: 330px;
+    top: 95%;
+  }
+  .frame6 {
+    display: block;
+    width: 400px;
+    height: 330px;
+    top: 250%;
+  }
+  .frame7 {
+    display: block;
+    bottom: -100%;
+  }
 }
