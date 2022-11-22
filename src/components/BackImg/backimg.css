@@ -4,6 +4,7 @@
   height: 50vh;
   left: 8%;
   top: 27%;
+  z-index: 1;
 }
 
 .frame2 {
