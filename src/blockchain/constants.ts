@@ -1,4 +1,4 @@
-export const defaultChainId = 97;
+export const defaultChainId = 5;
 
 export const rpcUrls = {
   1337: "http://localhost:8545",
@@ -22,7 +22,10 @@ export const addresses = {
     97: "0x7CAB7053ca06a485911CFC50Ff9D3818832D87c1",
   },
   zooToken: {
-    5: "0x50692f18e5867ff0b7fd9b70aea81348107bff8f",
+    5: "0x1e52b415Ef34CfC7709a93AD6B8b46B8C1B3e92c",
+  },
+  usdt: {
+    5: "0x7Eabf9D3AFedB81e530ee59257F2bb9216bc9045",
   },
 };
 

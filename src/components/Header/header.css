@@ -22,8 +22,8 @@
 }
 
 .navbar button {
-  /* width: 156px; */
-  /* height: 40px; */
+  width: 156px;
+  height: 40px;
   background: #fbe6b5;
   box-shadow: -2px 1px 16px #fbe6b5;
   border-radius: 11px;
@@ -36,7 +36,6 @@
   font-size: 14px;
   line-height: 14px;
   color: #352b15;
-  margin-right: 67px;
 }
 
 .navbar button:hover {
@@ -54,7 +53,7 @@
   font-size: 14px;
   line-height: 14px;
   color: #352b15;
-  margin-right: 67px;
+  z-index: 1000;
 }
 
 .navbar button:active {
@@ -72,7 +71,6 @@
   font-size: 14px;
   line-height: 14px;
   color: #352b15;
-  margin-right: 67px;
 }
 .nav-link {
   float: right;

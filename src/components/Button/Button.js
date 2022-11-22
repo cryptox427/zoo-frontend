@@ -14,7 +14,7 @@ const CButton = (props) => {
           marginBottom: props.pb * 10 + "px",
           marginRight: props.mr,
         }}
-        onClick={props.value}
+        onClick={props.onClick}
         key={props.key}
         disabled={props.disabled}
       >
