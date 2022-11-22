@@ -14,7 +14,7 @@ const Header = (props) => {
   return (
     <Navbar bg="light" expand="lg">
       <Container fluid>
-        <Navbar.Brand href="/home">
+        <Navbar.Brand href="/">
           <img src={mainLogo} alt="logo" className="logo-img" />
         </Navbar.Brand>
         {/* <Navbar.Toggle aria-controls="basic-navbar-nav" /> */}
