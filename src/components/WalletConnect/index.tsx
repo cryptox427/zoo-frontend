@@ -8,6 +8,8 @@ import { useContext, useCallback } from "react";
 import { ellipseAddress } from "utils/blockchain";
 import { Web3ModalContext } from "contexts/Web3ModalProvider";
 
+import "./walletconnect.css";
+
 const StyledMenu = styled((props: MenuProps) => (
   <Menu
     elevation={0}
@@ -73,7 +75,7 @@ export default function CustomizedMenus() {
   }, [disconnect]);
 
   return (
-    <div className="justify-content-center row">
+    <div className="justify-content-center row wallectconnect">
       {!account ? (
         <Button
           id="demo-customized-button"
