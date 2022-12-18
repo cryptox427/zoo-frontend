@@ -1,0 +1,42 @@
+.footer_menu {
+    width: 30%;
+    margin-left: 35%;
+    position: relative;
+    bottom: 10px;
+    flex-direction: column;
+    z-index: 1000;
+    margin-top: 250px;
+}
+
+.social_buttons {
+    width: 100%;
+    font-size: 20px;
+    margin: 0 auto;
+    display: flex;
+    justify-content:center;
+    height: 30px;
+    gap: 20px;
+}
+
+.social_texts {
+    font-size: 13px;
+    margin: 0 auto;
+    display: flex;
+    justify-content:center;
+}
+
+.social_buttons:hover {
+    cursor: pointer;
+}
+
+.social_buttons > * :hover {
+    color: #F5CE79;
+}
+
+
+@media only screen and (max-width: 900px) {
+    .footer_menu {
+        width: 90%;
+        margin-left: 5%;
+    }
+}

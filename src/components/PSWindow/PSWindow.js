@@ -7,6 +7,7 @@ import ProgressBar from "react-bootstrap/ProgressBar";
 import CButton from "../Button";
 import { CopyButton, Flex, TextInput } from "@contentful/f36-components";
 import { useRef, useContext } from "react";
+import Footer from '../Footer/Footer'
 
 const Title = (props) => {
   return (
@@ -152,6 +153,9 @@ const PSWindow = (props) => {
             <p className="price">120 $ZOO</p>
           </span>
         </Container>
+      </div>
+      <div>
+        <Footer />
       </div>
     </>
   );

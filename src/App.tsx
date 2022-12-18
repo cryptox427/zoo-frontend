@@ -11,6 +11,7 @@ import Web3WrapperProvider from "contexts/Web3WrapperProvider";
 
 import { NotificationContainer } from "react-notifications";
 
+
 const App = () => (
   <Providers>
     <BrowserRouter>
@@ -18,8 +19,6 @@ const App = () => (
       <Switch>
         <Route exact path="/" component={TotalContainer} />
       </Switch>
-
-      {/* <Footer /> */}
     </BrowserRouter>
     <NotificationContainer />
   </Providers>
