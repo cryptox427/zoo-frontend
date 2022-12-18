@@ -22,8 +22,12 @@
         z-index: 1000;
     }
 
-    div:has(> div.wallectconnect) {
+    div:has(> div.wallectconnect)  {
         justify-content: space-around !important;
+    }
+
+    .navbar-brand {
+        left: 35%;
     }
 }
 
