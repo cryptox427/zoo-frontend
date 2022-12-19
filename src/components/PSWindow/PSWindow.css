@@ -15,12 +15,13 @@
 
   border-radius: 20px;
   background: #fff9eb;
-  padding-top: 21px;
   top: 19%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1;
   margin-left: 7px;
+  padding-top: 21px;
+
 }
 
 .main-panel-incoming {
@@ -30,6 +31,7 @@
   height: 145px;
   border-radius: 20px;
   background: #fff9eb;
+  margin-left: 8px;
   padding-top: 21px;
   top: 16.5%;
   left: 50%;
