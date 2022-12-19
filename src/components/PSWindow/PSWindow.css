@@ -20,6 +20,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1;
+  margin-left: 7px;
 }
 
 .main-panel-incoming {
@@ -34,6 +35,48 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+/* 
+@media only screen and (max-width: 900px) {
+  .main-panel {
+    position: relative;
+    width: 341px;
+    height: 322px;
+  
+    border-radius: 20px;
+    background: #fff9eb;
+    padding-top: 21px;
+    top: 19%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    margin-left: 25%;
+  }
+  
+  .main-panel-incoming {
+    position: relative;
+    margin-top: -55px;
+    width: 341px;
+    height: 145px;
+    border-radius: 20px;
+    background: #fff9eb;
+    padding-top: 21px;
+    top: 16.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .widget-container input {
+    width: 287px !important;
+  }
+
+  .buy a {
+    position: relative;
+    left: 50px;
+    width: 287px !important;
+  }
+} */
+
 
 .refferal-panel {
   vertical-align: middle;
